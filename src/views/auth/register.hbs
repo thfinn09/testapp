@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/auth.css">
+
+<div class="auth-container">
+  <h2>Đăng ký</h2>
+
+  {{#if error}}
+    <div class="auth-error">
+      {{error}}
+    </div>
+  {{/if}}
+
+  <form method="POST" action="/register">
+    <input name="username" placeholder="Tên đăng nhập" required>
+    <input name="password" type="password" placeholder="Mật khẩu" required>
+    <button type="submit">Tạo tài khoản</button>
+  </form>
+
+  <div class="auth-footer">
+    Đã có tài khoản?
+    <a href="/login">Đăng nhập</a>
+  </div>
+</div>

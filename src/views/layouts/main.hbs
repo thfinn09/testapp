@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Note App</title>
+  <link rel="stylesheet" href="/css/notes.css">
+</head>
+<body>
+
+{{#if user}}
+  <div class="top-bar">
+    <span>Xin chào {{user.username}}</span>
+    <a href="/logout" class="btn-logout">Đăng xuất</a>
+  </div>
+{{/if}}
+
+{{{body}}}
+
+</body>
+</html>
